@@ -39,3 +39,39 @@ npm i mongoose express
 ``
 setting up the system insdie the github code space to understand how things work their
 ``
+
+
+## Mouse is not working properly and database were created from the terminal using commands like 
+```
+show dbs
+```
+but first make sure to run the database
+
+```
+the below command will create a database if not exist and if does then simply move switch to that one 
+
+```
+use databaseName
+```
+
+To create a simple collection inside the respective databse but need to be in that databse first
+
+```
+db.createCollection("NameIt")
+```
+
+Now to drop a databse 
+```
+db.dropDatabase("YourDatabaseName")
+```
+
+### To iNsert objects into the collection created use the commands below
+```
+db.UserCredentials.insertOne({name: "theName", age:23, gpa:3.4})
+```
+
+## To insert many Set of objects at a time useing the command called insertMany first need to be in the databse use mood or thing like that 
+
+```
+db.CollectionName.insertMany([{name:"temp", age:34, gpa:3.4}, {object: "NeedNot To be COnsistent", age:2}])
+```
