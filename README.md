@@ -75,3 +75,8 @@ db.UserCredentials.insertOne({name: "theName", age:23, gpa:3.4})
 ```
 db.CollectionName.insertMany([{name:"temp", age:34, gpa:3.4}, {object: "NeedNot To be COnsistent", age:2}])
 ```
+
+to check the object use command 
+```
+db.collectionName.find()
+```
