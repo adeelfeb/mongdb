@@ -80,3 +80,30 @@ to check the object use command
 ```
 db.collectionName.find()
 ```
+
+to show the objects from specific collection in some sorted manner using following code
+```
+db.CollectionName.find().sort({name:1})
+```
+
+same goes for the limit thing
+```
+db.CollectionName.find().limit(3)
+```
+
+And Yes both these can be used 
+
+```
+db.CollectionName.find().sort({age:1})limit(3)
+```
+
+here is how you add filter to the method of find
+``
+two parameters are send to the funtion first the query second the projection
+find({query}, {projection})
+
+query is the if else thingi 
+project will give the values that are true and hide the one's that are false like in the case below the object _id that is default with them
+```
+db.UserCredential.find({age:3},{_id:false,name:true})
+```
