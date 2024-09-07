@@ -126,10 +126,10 @@ in tha same way the ``gt`` is used for ``greater than`` operation <be>
 and for ``greater than equal`` ``gte`` is used 
 
 
-** The ``in`` operator or what ever it is called is basically ``is in`` **
+*** The ``in`` operator or what ever it is called is basically ``is in`` ***
 
 ```js
 db.CollectionName.find({name:{$in:["Set of","Name You ","Want to Get"}})
 ```
 
-** same could be done for ``not in`` using ``nin``
+*** same could be done for ``not in`` using ``nin`` ***
