@@ -111,12 +111,16 @@ project will give the values that are true and hide the one's that are false lik
 ```js
 db.UserCredential.find({age:3},{_id:false,name:true})
 ```
+# Operators 
 
-
-# THE NOT EQUAL operator for comparison
+## THE NOT EQUAL operator for comparison
 
 ```js
 db.CollectionName.find({name:{$ne: "TheName"}})
 ```
 
 this will give the objects inside the collection that have a name ``not equal`` to the name given
+
+
+in tha same way the ``gt`` is used for ``greater than`` operation <be>
+and for ``greater than equal`` ``gte`` is used 
