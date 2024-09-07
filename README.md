@@ -50,43 +50,44 @@ but first make sure to run the database
 ```
 the below command will create a database if not exist and if does then simply move switch to that one 
 
-```
+```js
 use databaseName
 ```
 
 To create a simple collection inside the respective databse but need to be in that databse first
 
-```
+```js
 db.createCollection("NameIt")
 ```
 
 Now to drop a databse 
-```
+```js
 db.dropDatabase("YourDatabaseName")
 ```
 
 ### To iNsert objects into the collection created use the commands below
-```
+```js
 db.UserCredentials.insertOne({name: "theName", age:23, gpa:3.4})
 ```
 
 ## To insert many Set of objects at a time useing the command called insertMany first need to be in the databse use mood or thing like that 
 
-```
+```js
 db.CollectionName.insertMany([{name:"temp", age:34, gpa:3.4}, {object: "NeedNot To be COnsistent", age:2}])
 ```
 
 to check the object use command 
-```
+```js
 db.collectionName.find()
 ```
 
 to show the objects from specific collection in some sorted manner using following code
-```
+```js
 db.CollectionName.find().sort({name:1})
 ```
 
 same goes for the limit thing
+
 ```js
 db.CollectionName.find().limit(3)
 ```
