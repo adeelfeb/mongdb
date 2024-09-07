@@ -116,5 +116,7 @@ db.UserCredential.find({age:3},{_id:false,name:true})
 # THE NOT EQUAL operator for comparison
 
 ```js
-
+db.CollectionName.find({name:{$ne: "TheName"}})
 ```
+
+this will give the objects inside the collection that have a name ``not equal`` to the name given
