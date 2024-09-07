@@ -42,12 +42,14 @@ setting up the system insdie the github code space to understand how things work
 
 
 ## Mouse is not working properly and database were created from the terminal using commands like 
-```
+
+```js
 show dbs
 ```
+
 but first make sure to run the database
 
-```
+
 the below command will create a database if not exist and if does then simply move switch to that one 
 
 ```js
